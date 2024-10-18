@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import UncontrolHome from "./UncontrolHome";
+import ControlHome from "./ControlledHome";
+import FormDataHome from "./FormDataHome";
+import EditableForm from "./EditableForm";
+import EditableFormWithToolbar from "./EditableFormWithToolbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <header className="App-header">
+            <ControlHome />
+            <UncontrolHome />
+            <FormDataHome />
+            <EditableForm />
+            <EditableFormWithToolbar />
+            <p>Это ~~текст~~ с перечеркнутым словом.</p>
+
+        </header>
     </div>
   );
 }
